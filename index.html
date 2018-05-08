@@ -1,0 +1,46 @@
+<!doctype html>
+<head>
+  <html lang="en-us"></html>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:700" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>jQuery Table</title>
+</head>
+<html>
+<body>
+  <div class="header">
+    <h1>Table Finder</h1>
+    <h4>Pick your table now</h4>
+  <div class="container">
+    <div class="tables">
+      <button class="available" type="button">1</button>
+      <button class="available" type="button">2</button>
+      <button class="available" type="button">3</button>
+      <button class="available" type="button">4</button>
+      <button class="available" type="button">5</button>
+      <button class="available" type="button">6</button>
+      <button class="available"type="button">7</button>
+      <button class="available" type="button">8</button>
+      <button class="available" type="button">9</button>
+    </div>
+  </div>
+  <div class ="hidden">
+    <form class ="reserveForm">
+      <h3>New Reservation</h3>
+      <div class="tableNumber">
+        <h5>Table #</h5>
+        <input id="tableHeader" type="text" placeholder="Table #">
+      </div>
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Phone Number">
+      <input type="text" placeholder="Total Seats">
+      <button  id="hiddenSubmit" type="submit" form="nameform" >Submit</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
