@@ -2,19 +2,23 @@
 
 $(document).ready(() => {
 
-  let btn = $(".available");
-  btn.click(() => {
-    $(".hidden").toggle();
+  $("button").on("click", function() {
+    $(".hidden").fadeIn("slow");
+    console.log(event.target)
   })
 
-  let close = $(".material-icons");
-  close.click(() => {
-    $(".hidden").toggle();
+  $(".material-icons").on("click", function() {
+    $(".hidden").fadeOut("slow");
   })
+ 
+  $("#hiddenSubmit").on("click", (event) => {
+    usersName = $("#name-id").val();
+    $("#name-id").val("");
+    container.attr("name", usersName);
+    container.addClass("reserved");
 
-  let submit = $("#hiddenSubmit");
-  submit.click(() => {
-    $(".hidden").toggle();
-    $ (".available").toggleClass("reserved");
-  });
+    $(".hidden").fadeOut("slow");
+    
+    $ (".available").addClass("reserved");
+  })
 });

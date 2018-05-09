@@ -26,7 +26,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
   }
-  
+
   .available {
     text-align: center;  
     border-radius: 100%;
@@ -37,10 +37,20 @@ body {
     margin-left: 10px;
     align-items: center;
     border: none;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
   }
 
   .hidden {
     display: none;
+    position: fixed;
+    top: 34%;
+    left: 19%;
+    transform: translateX(50%) translateY(-50%);
+    margin: 0 auto;
+    box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+    width: 250px;
+    height: 250px;
   }
 
   .reserveForm {
@@ -48,8 +58,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
+    transform: translate(0%, -95%);
+    height: 275px;
     width: 250px;
-    height: 300px;
   }
 
   input {
@@ -91,8 +102,8 @@ body {
   .tableNumber {
     display: flex;
     flex-direction: row;
-   
   }
+
   .material-icons {
     right: -225px;
     position: relative;
@@ -108,19 +119,27 @@ body {
     margin-left:  40px;
   }
   
-  .available {
-    background-color: #CCC
-  }
-  
   .reserved {
-    background-color: #E34E45;
+    background-color: #E34E45; 
+    border-radius: 100%;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    cursor: not-allowed;
+    
   }
   
   .dot:hover {
       background-color: green;
       cursor: pointer;
   }
-  
+    
   @media only screen and (min-width: 1200px) {
     .tables {
       width: 400px;
@@ -131,13 +150,21 @@ body {
         width: 100px;
         height: 100px;
     }
+
+    .reserved {
+      width: 100px;
+      height: 100px;
+    }
+
     #tableHeader{
         top: 20px;
         left: -20px;
+        position: relative;
         }
     .reserveForm {
         height: 300px;
         width: 400px;
+        transform: translate(0%, -118%);
       }
     .material-icons {
         right: -360px;

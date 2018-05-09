@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <head>
   <html lang="en-us"></html>
   <meta charset="utf-8">
@@ -16,27 +17,34 @@
     <h4>Pick your table now</h4>
   <div class="container">
     <div class="tables">
-      <button class="available" type="button">1</button>
-      <button class="available" type="button">2</button>
-      <button class="available" type="button">3</button>
-      <button class="available" type="button">4</button>
-      <button class="available" type="button">5</button>
-      <button class="available" type="button">6</button>
-      <button class="available"type="button">7</button>
-      <button class="available" type="button">8</button>
-      <button class="available" type="button">9</button>
+      <button #id="button1" class="available" type="button">1</button>
+      <button #id="button2" class="available" type="button">2</button>
+      <button #id="button3" class="available" type="button">3</button>
+      <button #id="button4" class="available" type="button">4</button>
+      <button #id="button5" class="available" type="button">5</button>
+      <button #id="button6" class="available" type="button">6</button>
+      <button #id="button7" class="available" type="button">7</button>
+      <button #id="button8" class="available" type="button">8</button>
+      <button #id="button9" class="available" type="button">9</button>
     </div>
   </div>
+
+  <!-- This is for the popup box -->
   <div class ="hidden">
-    <form class ="reserveForm">
+    <form class="reserveForm">
+      <div>
+        <i class="material-icons">X</i>
+      </div>
       <h3>New Reservation</h3>
       <div class="tableNumber">
+        
+        <!-- value="" -->
         <h5>Table #</h5>
-        <input id="tableHeader" type="text" placeholder="Table #">
+        <input id="tableHeader" type="text" placeholder="Table #" value="">
       </div>
-      <input type="text" placeholder="Name">
-      <input type="text" placeholder="Phone Number">
-      <input type="text" placeholder="Total Seats">
+      <input id="name" type="text" placeholder="Name" value="">
+      <input id="phone_number" type="text" placeholder="Phone Number" value="">
+      <input id="total_seats" type="text" placeholder="Total Seats" value="">
       <button  id="hiddenSubmit" type="submit" form="nameform" >Submit</button>
     </form>
   </div>
@@ -44,3 +52,4 @@
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
+
